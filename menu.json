@@ -1,0 +1,59 @@
+{
+    "title" : "Beta House Menu",
+    "menu": [
+        {
+            "image": "/images/Waffle.jpg",
+            "name": "Waffle",
+            "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
+            "price": 95.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Waffle"
+        },
+        {
+            "image": "/images/Americano.jpg",
+            "name": "Americano",
+            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
+            "price": 140.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Americano"
+        },
+        {
+            "image": "/images/campirano.jpg",
+            "name": "Campirano",
+            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
+            "price": 140.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house campirano"
+        },
+        {
+            "image": "/images/Americano.jpg",
+            "name": "Americano",
+            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
+            "price": 140.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Americano"
+        },
+        {
+            "image": "/images/Americano.jpg",
+            "name": "Americano",
+            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
+            "price": 140.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Americano"
+        },
+        {
+            "image": "/images/Americano.jpg",
+            "name": "Americano",
+            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
+            "price": 140.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Americano"
+        }
+    ]
+}
