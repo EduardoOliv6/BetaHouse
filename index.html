@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BetaHouse</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fontello.css">
 </head>
 <body>
     <header class="header">
@@ -16,10 +17,9 @@
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#Info">Informacion</a></li>
+                    <li><a href="#ElMenu">Productos</a></li>
+                    <li><a href="#redes">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,15 +32,15 @@
             </div>
         </div>
     </header>
-    <section class="information container">
+    <section class="information container" id="Info" >
       <div class="information-content">
          <div class="information-1">
              <div class="information-c1">
-                <h3>Reservaciones</h3>
+                <h3>Servicio a domicilio</h3>
                 <p>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 En valle dorado
                 </p>
-                <a href="#" class="btn-1">Informacion</a>
+                <a href="https://api.whatsapp.com/send?phone=5213222972405" target="_blank" class="btn-1">Informacion</a>
              </div>
              <div class="information-a1">
                  <img src="images/reservation.jpg" alt="">
@@ -51,11 +51,9 @@
                 <img src="images/reservation2.jpg" alt="">
             </div>
             <div class="information-c1">
-               <h3>Nosotros</h3>
-               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               </p>
-               <a href="#" class="btn-1">Informacion</a>
+               <h3>Donde Encontrarnos</h3>
+               <p>Ubicación por google Maps</p>
+               <a href="https://www.google.com/maps/place/Beta+House+Valle+Dorado/@20.7161447,-105.2759349,17z/data=!3m1!4b1!4m6!3m5!1s0x842147d6ea6d5bf7:0xe229c9c39b36e257!8m2!3d20.7161447!4d-105.27336!16s%2Fg%2F11fp8xnx45?entry=ttu" class="btn-1" target="_blank" >Informacion</a>
             </div> 
          </div>
       </div> 
@@ -70,12 +68,10 @@
 
             <div class="oferts-1">
                 <div class="oferts-txt">
-                    <h3>lorem</h3>
+                    <h3>Chilaquiles</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Laborum placeat nostrum, praesentium maxime a,
+                        Pollo, arrachera o huevo verdes o rojos ( servidos c/ frijoles, ensalada y pan con ajo). Incluye plato de frutas y una bebida; café, leche o agua fresca.
                     </p>
-                    <a href="#" class="btn-2">informacion</a>
                 </div>
                 <div class="oferts-img">
                     <img src="images/pr1.jpg" alt="">
@@ -86,22 +82,18 @@
                     <img src="images/pr2.jpg" alt="">
                 </div>
                 <div class="oferts-txt">
-                    <h3>lorem</h3>
+                    <h3>Huevos al gusto</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Laborum placeat nostrum, praesentium maxime a,
+                        A elegir (chorizo, tocino, jamón, salchicha, morrón, espinaca o a la mexicana) c/ frijoles, ensalada y pan con ajo. Incluye plato de frutas y una bebida; café, leche o agua fresca.
                     </p>
-                    <a href="#" class="btn-2">informacion</a>
                 </div>
             </div>
             <div class="oferts-1">
                 <div class="oferts-txt">
-                    <h3>lorem</h3>
+                    <h3>Machaca</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Laborum placeat nostrum, praesentium maxime a,
+                        carne de res seca desebrada con huevo, c/ frijol, ensalada, pan con ajo, plato de fruta y una bebida, agua fresca, cafe o leche.
                     </p>
-                    <a href="#" class="btn-2">informacion</a>
                 </div>
                 <div class="oferts-img">
                     <img src="images/pr3.jpg" alt="">
@@ -112,12 +104,11 @@
                     <img src="images/pr4.jpg" alt="">
                 </div>
                 <div class="oferts-txt">
-                    <h3>lorem</h3>
+                    <h3>Campirano</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Laborum placeat nostrum, praesentium maxime a,
+                        (Porción de chilaquiles verdes o rojos, un huevo estrellado, frijoles, arrachera, ensalada, pan con ajo y una quesadilla grande). Incluye plato de frutas y una bebida; café, leche o agua fresca.
+
                     </p>
-                    <a href="#" class="btn-2">informacion</a>
                 </div>
                 
             </div>
@@ -125,23 +116,24 @@
         </div>
     </section>
     <section class="bg"></section>
-    <section class="food container">
+    <section class="food container" id="ElMenu">
         <h2>Menu</h2>
         <span>Desayunos y comidas</span>
         <div id="menu-data" class="food-content"></div>
     </section>
+    <div class="btn-wsp">
+        <a href="https://api.whatsapp.com/send?phone=5213222972405" target="_blank" > <i class="icon-whatsapp"></i></a>
+    </div>
     <footer class="footer">
         <div class="footer-content container">
             <div class="link">
                 <span class="logo">Logo</span>
             </div>
-            <div class="link">
+            <div class="link" id="redes">
                 <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
+                    <li><a href="https://www.facebook.com/betahousevd/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/explore/locations/350756632526199/beta-house---valle-dorado/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.ubereats.com/mx/store/beta-house-valle-dorado/HpchZQaiW9iSay_fNQnZjA" target="_blank">Uber Eats</a></li>
                 </ul>
             </div>
         </div>
