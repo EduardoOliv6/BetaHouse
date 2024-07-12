@@ -2,58 +2,155 @@
     "title" : "Beta House Menu",
     "menu": [
         {
-            "image": "/images/Waffle.jpg",
-            "name": "Waffle",
-            "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
+            "image": "/images/H-al-gusto.jpg",
+            "name": "Huevo al gusto",
+            "description": "A elegir (chorizo, tocino, jamón, salchicha, morrón, o a la mexicana)",
+            "price": 98.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Huevo al gusto",
+            "extraDescription": {
+                "text": "*Con chilaquiles",
+                "price": 125.00
+            }
+            
+        },
+        {
+            "image": "/images/Hotcakes.jpg",
+            "name": "Hotcakes",
+            "description": "2 Hotcakes ( servidos c/ Fresa y/o plátano)",
+            "price": 90.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Hotcakes"
+        },
+        {
+            "image": "/images/chilaquiles.jpg",
+            "name": "Chilaquiles",
+            "description": "Pollo, Arrachera o Huevo, Verdes o Rojos",
+            "price": 98.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house chilaquiles"
+        },
+        {
+            "image": "/images/waffle.jpg",
+            "name": "waffle",
+            "description": "( servidos c/ Fresa y/o plátano y nieve)",
             "price": 95.00,
             "coin": "mxn",
             "catagory": "platillo", 
-            "alt": "Platillo beta house Waffle"
+            "alt": "Platillo beta house waffle"
+        },
+        {
+            "image": "/images/omelette.jpg",
+            "name": "Omelette",
+            "description": "Queso y 2 ingredientes a elegir ( Jitomate, Cebolla, Chorizo, Tociono, Jamón, Salchicha, Morrón, Champiñones, Espinacas) ",
+            "price": 98.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Omelette",
+            "extraDescription": {
+                "text": "*Con chilaquiles",
+                "price": 125.00
+            }
+        },
+        {
+            "image": "/images/fajitas.jpg",
+            "name": "Fajitas",
+            "description": "Pollo o Arrachera, c/ Morron, jitomate y cebolla",
+            "price": 98.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Fajitas",
+            "extraDescription": {
+                "text": "*Con chilaquiles",
+                "price": 125.00
+            }
+        },
+        {
+            "image": "/images/res-a-la-mex.jpg",
+            "name": "Res a la mexicana",
+            "description": "Arrachera con jitomate, cebolla y chile serrano.",
+            "price": 98.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Res a la mexicana",
+            "extraDescription": {
+                "text": "*Con chilaquiles",
+                "price": 125.00
+            }
+        },
+        {
+            "image": "/images/arrachera.jpg",
+            "name": "Arrachera",
+            "description": "Porcion de Arrachera",
+            "price": 98.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house Arrachera",
+            "extraDescription": {
+                "text": "*Con chilaquiles",
+                "price": 125.00
+            }
+        },
+        {
+            "image": "/images/elCampirano.jpg",
+            "name": "El Campirano",
+            "description": "(Porción de chilaquiles verdes o rojos, un huevo estrellado, frijoles, arrachera)",
+            "price": 140.00,
+            "coin": "mxn",
+            "catagory": "platillo", 
+            "alt": "Platillo beta house El campirano"
         },
         {
             "image": "/images/Americano.jpg",
             "name": "Americano",
-            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
-            "price": 140.00,
+            "description": "1 Waffle y 2 huevos con tocino",
+            "price": 120.00,
             "coin": "mxn",
             "catagory": "platillo", 
             "alt": "Platillo beta house Americano"
         },
         {
-            "image": "/images/campirano.jpg",
-            "name": "Campirano",
-            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
-            "price": 140.00,
+            "image": "/images/Machaca-con-Huevo.jpg",
+            "name": "Machaca con Huevo",
+            "description": "Porcion de carne seca de res desebrada con huevo y jitomate, cebolla y serrano",
+            "price": 98.00,
             "coin": "mxn",
             "catagory": "platillo", 
-            "alt": "Platillo beta house campirano"
+            "alt": "Platillo beta house Machaca con huevo",
+            "extraDescription": {
+                "text": "*Con chilaquiles",
+                "price": 125.00
+            }
         },
         {
-            "image": "/images/Americano.jpg",
-            "name": "Americano",
-            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
-            "price": 140.00,
+            "image": "/images/chicharron.jpg",
+            "name": "Chicharron",
+            "description": "En salsa verde o roja",
+            "price": 98.00,
             "coin": "mxn",
             "catagory": "platillo", 
-            "alt": "Platillo beta house Americano"
+            "alt": "Platillo beta house Chicharron",
+            "extraDescription": {
+                "text": "*Con chilaquiles",
+                "price": 125.00
+            }
         },
         {
-            "image": "/images/Americano.jpg",
-            "name": "Americano",
-            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
-            "price": 140.00,
+            "image": "/images/HuevosRancheros.jpg",
+            "name": "Huevos Rancheros",
+            "description": "2 Huevos estrellados en sobre una tortilla dorada bañados en salsa roja o verde",
+            "price": 98.00,
             "coin": "mxn",
             "catagory": "platillo", 
-            "alt": "Platillo beta house Americano"
-        },
-        {
-            "image": "/images/Americano.jpg",
-            "name": "Americano",
-            "description": "orem ipsum dolor sit amet consectetur adipisicing elit. Optio, laudantium minus suscipit numquam quis",
-            "price": 140.00,
-            "coin": "mxn",
-            "catagory": "platillo", 
-            "alt": "Platillo beta house Americano"
+            "alt": "Platillo beta house Huevos rancheros",
+            "extraDescription": {
+                "text": "*Con chilaquiles",
+                "price": 125.00
+            }
         }
     ]
+    
 }

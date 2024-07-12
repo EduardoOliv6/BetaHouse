@@ -6,7 +6,6 @@ const fetchJsonData = async (url) => {
     
     // Revisa que no tenga errores
     if (!response.ok) {
-      console.log('asdfasdf');
       throw new Error(`Error: ${response.status} ${response.statusText}`);
     }
 
@@ -53,9 +52,29 @@ const insertMenuData = (menuData) => {
     
     foodTxtDiv.appendChild(description);
     foodTxtDiv.appendChild(price);
-    
     foodDiv.appendChild(title);
     foodDiv.appendChild(foodTxtDiv);
+    
+     if (item.extraDescription) {
+
+      const extraDescriptionDiv = document.createElement('div');
+      extraDescriptionDiv.classList.add('extra-description-div');
+
+
+      const extraDescription = document.createElement('p');
+      extraDescription.classList.add('extra-description');
+      extraDescription.textContent = item.extraDescription.text;
+
+      const extraPrice = document.createElement('p');
+      extraPrice.classList.add('extra-price');
+      extraPrice.textContent = `$${item.extraDescription.price.toFixed(2)}`;
+
+      extraDescriptionDiv.appendChild(extraDescription);
+      extraDescriptionDiv.appendChild(extraPrice);
+
+      foodDiv.appendChild(extraDescriptionDiv);
+
+    }
 
     if (index % 2 === 0) {
       leftDiv.appendChild(foodDiv)

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -109,6 +109,7 @@ img {
     text-align: center;
     background-color: white;
     height: 300px;
+    font-family: 'Times New Roman', Times, serif;
 }
 h3 {
     font-size: 40px;
@@ -163,17 +164,28 @@ h3 {
     display: flex;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     margin-top: -50px;
+    
 }
 .oferts-1 {
     flex-basis: 25%;
 }
 .oferts-txt {
-    padding: 25px;
+    padding: 15px;
     text-align: center;
     background-color: #ffffff;
 }
+.oferts-txt p {
+    padding-bottom: 0;
+}
 .oferts-img {
     height: 230px;
+
+}
+.oferts-img .image-1 {
+    height: 255px;
+}
+.oferts-img .image-3 {
+    height: 255px;
 }
 .oferts-img img {
     height: 230px;
@@ -202,17 +214,19 @@ h3 {
     text-align: center;
 }
 .food h2 {
-    font-size: 50px;
-    font-family: "satisfy", cursive;
+    font-size: 90px;
+    font-family: "Bona Nova SC", serif;
     margin-bottom: 15px;
     color: #2c2c2c;
 }
 .food span {
-    font-size: 20px;
+    font-size: 35px;
     text-transform: uppercase;
     display: block;
+    font-family: "Satisfy", cursive;
     margin-bottom: 45px;
-    color: #2c2c2c;
+    color: #2c2c2c;     
+    text-align: center; 
 }
 .food-content {
     padding: 0 100px;
@@ -234,7 +248,7 @@ h3 {
 .food-txt {
     display: flex;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 .food-txt .precio {
     font-size: 20px ;
@@ -270,6 +284,33 @@ h3 {
 .link a:hover {
     color: #C9A538;
 }
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+.btn-wsp i {
+    color: #ffffff;
+}
+.btn-wsp i:hover {
+    color: black;
+}
+.btn-wsp:hover {
+    text-decoration: none;
+    background: #ffffff;
+
+}
+
 
 @media (max-width:991px) {
     .menu {
@@ -333,26 +374,6 @@ h3 {
     .bg {
         margin-top: 0;
     }
-    .btn-wsp {
-        position: fixed;
-        width: 55px;
-        height: 55px;
-        line-height: 55px;
-        bottom: 30px;
-        right: 30px;
-        background: #0df053;
-        color: #ffffff;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-        z-index: 100;
-    }
-    .btn-wsp:hover {
-        text-decoration: none;
-        color: #0df053;
-        background: #ffffff;
-    }
     .food {
         padding: 30px;
     }
@@ -377,4 +398,46 @@ h3 {
     .link ul li {
         margin: 0 0 15px 0;
     }
+}
+#menu-data {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    width: 50%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+}
+
+
+
+.extra-description-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.extra-description-div .extra-description {
+    color: #5C5C5C;
+}
+.extra-description-div .extra-price {
+    font-size: 20px ;
+    color: #C9A538 ;
+    font-weight: 700;
+
+}
+
+
+.menu-2 {
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 45px;
+    font-family: "satisfy", cursive;
+    color: #2c2c2c;
+}
+.lunchs, .drinks {
+    width: 50%; 
+    box-sizing: border-box; 
+    padding: 10px; 
 }
