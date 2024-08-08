@@ -86,13 +86,19 @@ img {
     font-family: "Satisfy", cursive;
     color: white;
     line-height: 1;
+    font-weight: 400;
     margin-bottom: 15px;
+}
+.header-txt .subtitulo {
+    font-family: "Satisfy", cursive;
+    font-weight: 500;
+    color: white;
 }
 .header-txt p {
     font-size: 35px;
     color: white;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
 }
 .information-content {
     display: flex;
@@ -109,7 +115,13 @@ img {
     text-align: center;
     background-color: white;
     height: 300px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+}
+.information-c1 p {
+    font-weight: 500;
+    font-size: 18px;
+
 }
 h3 {
     font-size: 40px;
@@ -229,14 +241,20 @@ h3 {
     text-align: center; 
 }
 .food-content {
-    padding: 0 100px;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-
+   display: flex;
+   flex-direction: row;
+   text-align: left;
+   justify-content: space-around;
 }
+
+.food-content .right, .left{
+    width: 50%;
+    
+ }
+ 
+
 .food-1 {
-    margin: 50px;
+    margin: 30px;
 }
 .food-1 h3 {
     font-family: "poppins", sans-serif;
@@ -249,16 +267,135 @@ h3 {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    justify-content: space-between;
 }
 .food-txt .precio {
     font-size: 20px ;
     color: #C9A538 ;
     font-weight: 700;
     margin-left: 10px;
+    text-align: right;
 }
 .food-txt p {
     color: #5C5C5C;
 }
+.extra-description-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.extra-description-div .extra-description {
+    color: #5C5C5C;
+}
+.extra-description-div .extra-price {
+    font-size: 20px ;
+    color: #C9A538 ;
+    font-weight: 700;
+
+}
+
+
+.menu-2 {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    font-family: "satisfy", cursive;
+    color: #2c2c2c;
+
+}
+.lunchs, .drinks {
+    width: 50%; 
+    
+}
+
+.lunch-1{
+    text-align: left;
+    margin-top: 30px;
+    font-family: "poppins", sans-serif;
+
+}
+.lunchs .lunch-title {
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #2c2c2c;
+}
+
+.lunch-txt .option-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.lunch-txt .lunch-price {
+    font-size: 20px ;
+    color: #C9A538 ;
+    font-weight: 700;
+    padding-left: 15px;
+}
+.lunch-txt p {
+    color: #5C5C5C;
+    font-size: 16px;
+}
+
+
+.drink-1 {
+    text-align: left;
+    margin-top: 30px;
+    font-family: "poppins", sans-serif;
+    padding-left: 30px;
+
+}
+
+
+.drink-1 .drink-title {
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #2c2c2c;
+}
+.drink-txt {
+    flex-direction: column;
+}
+
+.drink-txt p {
+    color: #5C5C5C;
+    font-size: 16px;
+}
+
+.drink-1 .drink-txt .drinksizes-container  .drink-price{
+    font-size: 18px ;
+    color: #C9A538 ;
+    font-weight: 700;
+    padding-left: 15px;
+}
+.drink-option {
+    display: flex;
+    justify-content: space-between;
+}
+.drink-containerPrime {
+    display: flex;
+}
+.drinksizes-container {
+    display: flex;
+    
+ 
+}
+
+.drink-1 .drink-txt .another-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drink-1 .drink-txt .another-container .another-price {
+    font-size: 18px ;
+    color: #C9A538 ;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+
 .footer {
     background-color: #2c2c2c;
     padding: 100px 0;
@@ -374,16 +511,26 @@ h3 {
     .bg {
         margin-top: 0;
     }
-    .food {
-        padding: 30px;
-    }
     .food-content {
-        padding: 0;
         flex-direction: column;
+        text-align: left;
+        justify-content: center;
     }
-    .food-1 {
-        margin: 0;
-
+    .food-content .right, .left {
+        width: 100%;
+    }
+    .menu-2 {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px;
+    }
+    .lunchs, .drinks {
+        width: 100%;
+        font-size: 10px; 
+        
+    }
+    .drinks {
+        margin-top: 20px;
     }
     .footer {
         padding: 30px;
@@ -398,46 +545,4 @@ h3 {
     .link ul li {
         margin: 0 0 15px 0;
     }
-}
-#menu-data {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.left, .right {
-    width: 50%; 
-    box-sizing: border-box; 
-    padding: 10px; 
-}
-
-
-
-.extra-description-div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.extra-description-div .extra-description {
-    color: #5C5C5C;
-}
-.extra-description-div .extra-price {
-    font-size: 20px ;
-    color: #C9A538 ;
-    font-weight: 700;
-
-}
-
-
-.menu-2 {
-    display: flex;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 45px;
-    font-family: "satisfy", cursive;
-    color: #2c2c2c;
-}
-.lunchs, .drinks {
-    width: 50%; 
-    box-sizing: border-box; 
-    padding: 10px; 
 }
