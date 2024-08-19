@@ -97,6 +97,7 @@ img {
     color: white;
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 25px;
 }
 .information-content {
     display: flex;
@@ -106,7 +107,7 @@ img {
    
 }
 .information-1 {
-    flex-basis: 30%;
+    flex-basis: 50%;
 }
 .information-c1 {
     padding: 45px;
@@ -130,11 +131,11 @@ h3 {
 .information-2 {
     flex-basis: 70%;
 }
-.information-b1 {
-    height: 300px;
+.information-b1, .information-a1 {
+    height: auto;
 }
-.information-a1 {
-    height: 300px;
+.information-a1 img, .information-b1 img {
+    object-fit: cover;
 }
 .information-b1 img {
     height: 300px;
@@ -253,7 +254,7 @@ h3 {
 .food-content .right, .left{
     width: 50%;
     
- }
+}
  
 
 .food-1 {
@@ -302,6 +303,7 @@ h3 {
     display: flex;
     margin-top: 50px;
     flex-direction: row;
+    justify-content: space-around;
     font-family: "satisfy", cursive;
     color: #2c2c2c;
 
@@ -313,7 +315,7 @@ h3 {
 
 .lunch-1{
     text-align: left;
-    margin-top: 30px;
+    margin: 30px;
     font-family: "poppins", sans-serif;
 
 }
@@ -344,9 +346,8 @@ h3 {
 
 .drink-1 {
     text-align: left;
-    margin-top: 30px;
+    margin: 30px;
     font-family: "poppins", sans-serif;
-    padding-left: 30px;
 
 }
 
@@ -489,10 +490,18 @@ h3 {
     .header-content {
         padding: 100px 30px;
     }
+    .header-txt p {
+        font-size: 20px;
+    }
     .information-content {
         display: flex;
         flex-direction: column;
         margin-top: 0;
+        
+    }
+    .logo img {
+        width: 60px;
+        height: 60px;
     }
     .our {
         margin-top: 0;
@@ -536,8 +545,10 @@ h3 {
     }
     .lunchs, .drinks {
         width: 100%;
-        font-size: 10px; 
         
+    }
+    .drink-1 .drink-txt .drinksizes-container  .drink-price{
+        font-size: 15px;
     }
     .drinks {
         margin-top: 20px;
@@ -554,5 +565,10 @@ h3 {
     }
     .link ul li {
         margin: 0 0 15px 0;
+    }
+    .link a img {
+        height: 60px;
+        width: 60px;
+    
     }
 }

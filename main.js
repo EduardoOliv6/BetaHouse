@@ -211,7 +211,8 @@ const insertDrinkContainer = (drinkData) => {
 }
 
 // const PRODUCTION_URL = "betahouserestaruante.com"
-const PRODUCTION_URL = "http://127.0.0.1:5500/";
+// const PRODUCTION_URL = "http://127.0.0.1:5500/";
+const PRODUCTION_URL = "";
 const url = `${PRODUCTION_URL}menu.json`;
 fetchJsonData(url)
   .then(data => {
