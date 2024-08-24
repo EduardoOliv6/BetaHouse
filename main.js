@@ -18,6 +18,30 @@ const fetchJsonData = async (url) => {
   }
 };
 
+document.addEventListener('scroll', function() {
+  const ourSection = document.querySelector('.our');
+  const ourPosition = ourSection.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.3;
+
+  if(ourPosition < screenPosition && ourPosition > -ourSection.clientHeight) {
+      ourSection.classList.add('visible');
+  } else {
+      ourSection.classList.remove('visible');
+  }
+});
+
+document.addEventListener('scroll', function() {
+  const bgSection = document.querySelector('.bg');
+  const bgPosition = bgSection.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.3;
+
+  if(bgPosition < screenPosition && bgPosition > -bgSection.clientHeight) {
+      bgSection.classList.add('visible');
+  } else {
+      bgSection.classList.remove('visible');
+  }
+});
+
 const insertMenuData = (menuData) => {
   const menuContainer = document.getElementById('menu-data');
   
@@ -112,6 +136,7 @@ const insertLunchContainer = (lunchData) => {
 
       const optionName = document.createElement('p');
       optionName.textContent = option.name;
+      optionName.classList.add("lunch-name")
 
       const optionPrice = document.createElement('p');
       optionPrice.classList.add('lunch-price');
@@ -159,6 +184,7 @@ const insertDrinkContainer = (drinkData) => {
 
       const anotherName = document.createElement("p");
       anotherName.textContent = another.name;
+      
 
       const anotherPrice = document.createElement("p");
       anotherPrice.classList.add("another-price");
@@ -175,12 +201,17 @@ const insertDrinkContainer = (drinkData) => {
          drinkOptionContainer.classList.add('drink-option');
          const optionName = document.createElement('p');
          optionName.textContent = option.name;
+         optionName.classList.add("drink-name")
+
+         const dots = document.createElement("div");
+         dots.classList.add("dots")
 
          const drinksizesContainerprime = document.createElement("div")
          drinksizesContainerprime.classList.add("drink-containerPrime")
    
-   
+         
          drinkOptionContainer.appendChild(optionName);
+         drinkOptionContainer.appendChild(dots)
          drinkTxt.appendChild(drinkOptionContainer)
    
          option.price.forEach((price) => {

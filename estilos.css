@@ -80,7 +80,7 @@ img {
     text-align: center;
 }
 .header-txt h1 {
-    font-size: 75px;
+    font-size: 80px;
     font-family: "Satisfy", cursive;
     color: white;
     line-height: 1;
@@ -165,11 +165,21 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    background-attachment: fixed;
 }
 .our h2 {
     font-size: 35px;
     color: white;
     text-transform: uppercase;
+    opacity: 0; /* Inicialmente invisible */
+    transform: scale(0.9); /* Escala inicial */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Animación al hacer scroll */
+.our.visible h2 {
+    opacity: 1; /* Totalmente visible */
+    transform: scale(1); /* Escala normal */
 }
 .oferts-content {
     display: flex;
@@ -213,6 +223,8 @@ h3 {
     text-transform: uppercase;
 }
 .bg {
+    margin-top: -50px;
+    padding: 250px 0;
     background:linear-gradient(
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)
@@ -221,9 +233,21 @@ h3 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
-    margin-top: -50px;
+    text-align: center;
+    background-attachment: fixed;
 
+}
+.bg h2 {
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0; /* Inicialmente invisible */
+    transform: scale(0.9); /* Escala inicial */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.bg.visible h2 {
+    opacity: 1; /* Totalmente visible */
+    transform: scale(1); /* Escala normal */
 }
 .food {
     padding: 100px 0;
@@ -273,31 +297,35 @@ h3 {
     margin-bottom: 15px;
     justify-content: space-between;
 }
-.food-txt .precio {
-    font-size: 20px ;
-    color: #C9A538 ;
-    font-weight: 700;
-    margin-left: 10px;
-    text-align: right;
-}
+
 .food-txt p {
     color: #5C5C5C;
+    margin: 0;
+    padding: 0;
+}
+
+.food-txt .precio {
+    font-size: 20px;
+    color: #C9A538;
+    font-weight: 700;
+    margin-left: 10px;
 }
 .extra-description-div {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 .extra-description-div .extra-description {
     color: #5C5C5C;
 }
+
 .extra-description-div .extra-price {
-    font-size: 20px ;
-    color: #C9A538 ;
+    font-size: 20px;
+    color: #C9A538;
     font-weight: 700;
-
+    margin-left: 10px;
 }
-
 
 .menu-2 {
     display: flex;
@@ -329,20 +357,21 @@ h3 {
 
 .lunch-txt .option-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
 }
+
 .lunch-txt .lunch-price {
-    font-size: 20px ;
-    color: #C9A538 ;
+    font-size: 20px;
+    color: #C9A538;
     font-weight: 700;
     padding-left: 15px;
 }
-.lunch-txt p {
+
+.lunch-txt .lunch-name {
     color: #5C5C5C;
     font-size: 16px;
 }
-
 
 .drink-1 {
     text-align: left;
@@ -362,22 +391,41 @@ h3 {
 .drink-txt {
     flex-direction: column;
 }
-
-.drink-txt p {
+.drink-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drink-name {
     color: #5C5C5C;
     font-size: 16px;
 }
+.dots {
+    flex-grow: 1;
+    margin: 0 10px;
+    position: relative;
+    height: 1px;
+    background: transparent;
+}
 
-.drink-1 .drink-txt .drinksizes-container  .drink-price{
+.dots::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: none;
+    border-bottom: 3px dotted #5C5C5C;; /* Línea de puntos */
+    transform: translateY(-50%);
+}
+.drink-price{
     font-size: 18px ;
     color: #C9A538 ;
     font-weight: 700;
     padding-left: 15px;
 }
-.drink-option {
-    display: flex;
-    justify-content: space-between;
-}
+
 .drink-containerPrime {
     display: flex;
 }
@@ -390,6 +438,9 @@ h3 {
 .drink-1 .drink-txt .another-container {
     display: flex;
     justify-content: space-between;
+}
+.drink-1 .drink-txt .another-container {
+    color: #5C5C5C;
 }
 
 .drink-1 .drink-txt .another-container .another-price {
@@ -433,30 +484,35 @@ h3 {
 }
 .btn-wsp {
     position: fixed;
-    width: 55px;
-    height: 55px;
     line-height: 55px;
     bottom: 30px;
+    display: block;
+    justify-content: center;
+    padding-top: 8px;
     right: 30px;
-    background: #0df053;
-    color: #ffffff;
-    border-radius: 50px;
     text-align: center;
-    font-size: 30px;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
     z-index: 100;
+    background: #25d366;
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
 }
-.btn-wsp i {
-    color: #ffffff;
+.icono-hover {
+    display: none;
+    padding-left: 5px;
 }
-.btn-wsp i:hover {
-    color: black;
+.btn-wsp:hover .imagenwsp {
+    display: none;
+}
+.btn-wsp:hover .icono-hover {
+    display:block
 }
 .btn-wsp:hover {
-    text-decoration: none;
-    background: #ffffff;
-
+    background:#ffffff;
 }
+
+
+
 
 
 
@@ -541,14 +597,23 @@ h3 {
     .menu-2 {
         flex-direction: column;
         justify-content: center;
-        padding: 0 30px;
+        text-align: left;
+    }
+    .menu-2 .menutitulo {
+        text-align: center;
     }
     .lunchs, .drinks {
         width: 100%;
         
     }
-    .drink-1 .drink-txt .drinksizes-container  .drink-price{
-        font-size: 15px;
+    .drink-1 .drink-txt .drink-containerPrime .drinksizes-container{
+        font-size: 16px;
+        display: block;
+        
+
+    }
+    .drink-1 .drink-txt .another-container {
+        font-size: 16px;
     }
     .drinks {
         margin-top: 20px;
